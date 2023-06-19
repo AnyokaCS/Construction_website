@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon" />
+
+    <!-- Lightbox Pupup -->
+    <link rel="stylesheet" href="css/lightbox.css">
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 5 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive-styles.css">
+    
+    <!-- Swiper JS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <!-- Navbar Section Start -->
+    <header id="full_nav">
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <img decoding="async" src="./images/logo.jpg" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <i class="fas fa-stream navbar-toggler-icon"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="main-nav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="project.html">Project</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="header_right">
+                            <div class="text-lg-end">
+                              <div>
+                                <span class="call_us">Call Us!</span>
+                              </div>
+                              <div>
+                                <span class="phone_no">+91 12345678989</span>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Navbar Section Exit -->
+   
+     <!-- banner Section start -->
+     <section class="banner_section">
+        <div class="container-fluid">
+            <div id="banner-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background: url(images/home-slide-1.jpg) no-repeat; background-size: cover;">
+                        <div class="carousel-caption">
+                            <div class="banner-content">
+                                <h3>WE PROVIDE BEST SERVICE</h3>
+                                <p>With our unwavering commitment to customer satisfaction, we go above and beyond to provide the best service in the industry.</p>
+                                <a href="contact.html" class="btn main-btn" id="utton">CONTACT US</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background: url(images/home-slide-2.jpg) no-repeat; background-size: cover;">
+                        <div class="carousel-caption">
+                            <div class="banner-content">
+                                <h3>MAKING DREAM COME TO LIFE</h3>
+                                <p>Dream big, and we'll make it happen. We understand that your home or commercial space is a reflection of your aspirations.</p>
+                                <a href="contact.html" class="btn main-btn" id="utton">CONTACT US</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background: url(images/home-slide-3.jpg) no-repeat; background-size: cover;">
+                        <div class="carousel-caption">
+                            <div class="banner-content">
+                                <h3>FROM CONCEPT TO CREATION</h3>
+                                <p>From the initial concept to the final creation, we are your trusted partner in the construction journey.</p>
+                                <a href="contact.html" class="btn main-btn" id="utton">CONTACT US</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#banner-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#banner-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- banner section exit -->
+
+
+    <audio id="myAudio">
+        <source src="music/metro-boomin-feat.-asap-rocky-roisee-am-i-dreaming-ost-chelovek-pauk-pautina-vselennykh.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      
+               <button class = "mus" id="mus">GLITCH</button>
+    
+                  
+
+
+                  
+    <!-- Services Section start -->
+
+    
+
+    <div class="row justify-content-center">
+        <div class="col-12 text-center pb-5">
+            <h2 class="section-title">Our Services</h2>
+            <p class="section-subtitle">Discover the epitome of craftsmanship and innovation with our exceptional portfolio of projects. From awe-inspiring architectural masterpieces to meticulously renovated spaces, we redefine the possibilities of construction.</p>
+        </div>
+    </div>
+
+    <section class="services" id="services">
+        <div class="box-container">
+           <div class="box">
+              <img src="images/service-1.png" alt="">
+              <h3>Building Construction</h3>
+              <p>Bringing visions to life with flawless craftsmanship and efficient project management.</p>
+           </div>
+           <div class="box">
+              <img src="images/service-2.png" alt="">
+              <h3>House Renovation</h3>
+              <p>Transforming homes into dream spaces with top-notch renovation services.</p>
+           </div>
+           <div class="box">
+              <img src="images/service-3.png" alt="">
+              <h3>Architecture Design</h3>
+              <p>Unleashing innovation and creativity through cutting-edge design solutions.</p>
+           </div>
+           <div class="box">
+              <img src="images/service-4.png" alt="">
+              <h3>Material Supply</h3>
+              <p>Reliable delivery of high-quality construction materials.</p>
+           </div>
+        </div>
+        <div class="box-container">
+           <div class="box">
+              <img src="images/service-5.png" alt="">
+              <h3>Construction Consultant</h3>
+              <p>Expert guidance for successful construction projects.</p>
+           </div>
+           <div class="box">
+              <img src="images/service-6.png" alt="">
+              <h3>Interior Design</h3>
+              <p>Creating captivating and personalized spaces.</p>
+           </div>
+           <div class="box">
+              <img src="images/service-7.png" alt="">
+              <h3>Building Maintenance</h3>
+              <p>Preserving property value through comprehensive maintenance solutions.</p>
+           </div>
+           <div class="box">
+              <img src="images/service-8.png" alt="">
+              <h3>Building Renovation</h3>
+              <p>Revitalizing properties with modern and energy-efficient upgrades.</p>
+           </div>
+        </div>
+     </section>     
+     
+    <!-- Features Section Exit -->
+
+    <!--Project Section start -->
+
+    <section class="landing_product_section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center pb-5">
+                    <h2 class="section-title">Our Projects</h2>
+                    <p class="section-subtitle">Discover the epitome of craftsmanship and innovation with our exceptional portfolio of projects. From awe-inspiring architectural masterpieces to meticulously renovated spaces, we redefine the possibilities of construction.</p>
+                </div>
+            </div>
+    
+            <div class="row mx-0">
+                <div class="col-lg-3 col-sm-6 mb-5">
+                    <div class="card product-card">
+                        <div class="product-img project1">
+                            <img decoding="async" src="images/project1.JPG" class="img-fluid" />
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>GREENLINE</h3>
+                        </div>
+                        <div class="product-detail">
+                            <a href="project.html" class="btn main-btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5">
+                    <div class="card product-card">
+                        <div class="product-img">
+                            <img decoding="async" src="images/project2.jpg" class="img-fluid" />
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>REGIS HILLS</h3>
+                        </div>
+                        <div class="product-detail">
+                            <a href="project.html" class="btn main-btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5">
+                    <div class="card product-card">
+                        <div class="product-img">
+                            <img decoding="async" src="images/project3.jpg" class="img-fluid" />
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>GRAND AVENUE</h3>
+                        </div>
+                        <div class="product-detail">
+                            <a href="project.html" class="btn main-btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5">
+                    <div class="card product-card">
+                        <div class="product-img">
+                            <img decoding="async" src="images/project4.jpg" class="img-fluid" />
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>RIVERIA</h3>
+                        </div>
+                        <div class="product-detail">
+                            <a href="project.html" class="btn main-btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    
+    <!--Project Section Exit -->
+    
+    <!-- Footer section Start-->
+    <section class="footer_wrapper mt-3 mt-md-0">
+        <div class="container px-5 px-lg-0">
+          <div class="row">
+            <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+              <h5>About Us</h5>
+              <p class="mb-4 ps-0 company_details">We are a leading construction company committed to delivering high-quality projects on time and within budget. With a skilled team of professionals and a strong track record of successful projects, we specialize in residential and commercial construction, providing innovative solutions tailored to our clients' needs.</p>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+                <h5>Contact Us</h5>
+                <div class="contact-info">
+                    <ul class="list-unstyled">
+                      <li><a href="#"><i class="fa fa-home me-3"></i> No. 96, South City, Astana</a></li>
+                      <li><a href="#"><i class="fa fa-phone me-3"></i>+1 222 3333</a></li>
+                      <li><a href="#"><i class="fa fa-envelope me-3"></i>info@example.com</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+              <h5>Quick Links</h5>
+              <ul class="link-widget p-0">
+                <li><a href="project.html">Project</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+              <h5>Stay Connected</h5>
+              <ul class="social-network d-flex align-items-center p-0">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid copyright-section">
+          <p>&copy; All Rights Reserved</p>
+        </div>
+      </section>
+      
+    <!-- Footer Section Exit  -->
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Lightbox Pupup -->
+        <script src="js/lightbox.js"></script>
+    
+        <!-- Bootstrap 5 CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    
+        <!-- Custom JS -->
+        <script>var audio = document.getElementById("myAudio");
+let nav = document.querySelector(".navbar");
+window.onscroll = function() {
+    if(document.documentElement.scrollTop > 50){
+        nav.classList.add("header-scrolled"); 
+    }else{
+        nav.classList.remove("header-scrolled");
+    }
+}
+
+// nav hide  
+let navBar = document.querySelectorAll(".nav-link");
+let navCollapse = document.querySelector(".navbar-collapse.collapse");
+navBar.forEach(function(a){
+    a.addEventListener("click", function(){
+        navCollapse.classList.remove("show");
+    })
+})
+var i = 0;
+    flag = false;
+
+    window.onload = function() {
+    var button = document.getElementById("mus");
+    button.addEventListener("click", function() {
+      i = i+1;
+        if(i==2) {
+            i = 0;
+            flag = !flag;
+        }
+        if(flag == true) {
+             audio.play();
+        } else {
+            audio.pause();
+        }
+    });
+  };
+  
+    document.addEventListener('keydown', handleKeyPress);
+
+    // Event handler function for keydown event
+    function handleKeyPress(event) {
+      // Access the pressed key through the event object
+      var key = event.key;
+        if(key === 'V' || key === 'v') {
+            if(flag == true) {
+                audio.pause();
+            } else if(flag == false) {
+                audio.play();
+            }
+        }
+    }
+     var but = document.getElementById('utton');
+    but.addEventListener('mouseover', function() {
+      but.style.transform = 'scale(1.2)';
+    });
+
+    but.addEventListener('mouseout', function() {
+      but.style.transform = 'scale(1)';
+    });
+    </script>
+        
+</body>
+
+</html>
