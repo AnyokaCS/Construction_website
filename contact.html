@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon" />
+
+    <!-- Lightbox Pupup -->
+    <link rel="stylesheet" href="css/lightbox.css">
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 5 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive-styles.css">
+    
+    <!-- Swiper JS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body class="contact">
+<!-- Navbar Section Start -->
+<header id="full_nav">
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                    <img decoding="async" src="./images/logo.jpg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                    aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="main-nav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="project.html">Project</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="header_right">
+                        <div class="text-lg-end">
+                          <div>
+                            <span class="call_us">Call Us!</span>
+                          </div>
+                          <div>
+                            <span class="phone_no">+91 12345678989</span>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- Navbar Section Exit -->
+
+    <!-- banner Section start -->
+    <section class="banner_section">
+        <div class="container">
+            <div class="banner-content">
+                <h1>Contact Us</h1>
+            </div>
+        </div>
+    </section>
+    <!-- banner section exit -->
+
+    <!--Contact Section Start-->
+    <section class="contact_section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center pb-5">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">To schedule a consultation, please provide your preferred date and time within the working hours from. <br> <span class="fa fa-clock"></span> Office hour: 8:00 AM to 6:00 PM</p>
+                </div>
+                <section class="contact-form">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-8 mx-auto">
+                              <form action="submit_contact_form.php" method="POST" onsubmit="return validateForm();">
+                                  <div class="form-group">
+                                      <label for="first-name">First Name:</label>
+                                      <input type="text" id="first-name" name="first_name" class="form-control" required>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="last-name">Last Name:</label>
+                                      <input type="text" id="last-name" name="last_name" class="form-control" required>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="phone">Phone Number:</label>
+                                      <input type="tel" id="phone" name="phone" class="form-control" required>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="email">Email:</label>
+                                      <input type="email" id="email" name="email" class="form-control" required>
+                                  </div>
+                                  <div class="form-group row">
+                                      <div class="col-md-6">
+                                          <label for="date">Date:</label>
+                                          <input type="date" id="date" name="date" class="form-control" required>
+                                      </div>
+                                      <div class="col-md-6">
+                                          <label for="time">Time:</label>
+                                          <input type="time" id="time" name="time" class="form-control" required>
+                                      </div>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="title">Duration:</label>
+                                      <select id="title" name="title" class="form-control" required>
+                                          <option value="">Select</option>
+                                          <option value="0">1 Hour</option>
+                                          <option value="1">2 Hours</option>
+                                          <option value="2">3 Hours</option>
+                                      </select>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="message">Message:</label>
+                                      <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                                  </div>
+                                  <div class="form-group">
+                                    <label class="container">
+                                        <input type="checkbox" name="terms" required>
+                                        <span class="checkmark"></span>
+                                        <a href="Report.pdf" target="_blank"> I agree to the terms and conditions</a>.
+                                    </label>
+                                </div>                               
+                                  <button type="submit" class="btn main-btn">Submit</button>
+                              </form>
+                              <div id="error-messages"></div>
+                          </div>
+                      </div>
+                  </div>
+              </section>
+    <!--Contact Section Exit -->
+
+        <!-- Footer section Start-->
+        <section class="footer_wrapper mt-3 mt-md-0">
+            <div class="container px-5 px-lg-0">
+              <div class="row">
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+                  <h5>About Us</h5>
+                  <p class="mb-4 ps-0 company_details">We are a leading construction company committed to delivering high-quality projects on time and within budget. With a skilled team of professionals and a strong track record of successful projects, we specialize in residential and commercial construction, providing innovative solutions tailored to our clients' needs.</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+                    <h5>Contact Us</h5>
+                    <div class="contact-info">
+                        <ul class="list-unstyled">
+                          <li><a href="#"><i class="fa fa-home me-3"></i> No. 96, South City, Astana</a></li>
+                          <li><a href="#"><i class="fa fa-phone me-3"></i>+1 222 3333</a></li>
+                          <li><a href="#"><i class="fa fa-envelope me-3"></i>info@example.com</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+                  <h5>Quick Links</h5>
+                  <ul class="link-widget p-0">
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html">Home</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+                  <h5>Stay Connected</h5>
+                  <ul class="social-network d-flex align-items-center p-0">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid copyright-section">
+              <p>&copy; All Rights Reserved</p>
+            </div>
+          </section>
+          
+        <!-- Footer Section Exit  -->
+
+<script>
+  function validateForm() {
+    const firstName = document.getElementById('first-name').value;
+    const lastName = document.getElementById('last-name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+    const date = document.getElementById('date').value;
+    const time = document.getElementById('time').value;
+
+    const nameRegex = /^[a-zA-Z]+$/;
+    const emailRegex = /\S+@\S+\.\S+/;
+    const phoneRegex = /^(\+7|8)[0-9]{10}$/;
+
+    let isValid = true;
+    let errorMessages = [];
+
+    if (!nameRegex.test(firstName) || !nameRegex.test(lastName)) {
+      isValid = false;
+      errorMessages.push('First name and last name must contain only letters (A-Z, a-z).');
+      document.getElementById('first-name').classList.add('error');
+      document.getElementById('last-name').classList.add('error');
+    } else {
+      document.getElementById('first-name').classList.remove('error');
+      document.getElementById('last-name').classList.remove('error');
+    }
+
+    if (!emailRegex.test(email)) {
+      isValid = false;
+      errorMessages.push('Please enter a valid email address.');
+      document.getElementById('email').classList.add('error');
+    } else {
+      document.getElementById('email').classList.remove('error');
+    }
+
+    if (!phoneRegex.test(phone)) {
+      isValid = false;
+      errorMessages.push('Please enter a valid phone number (+7XXXXXXXXXX or 8XXXXXXXXXX).');
+      document.getElementById('phone').classList.add('error');
+    } else {
+      document.getElementById('phone').classList.remove('error');
+    }
+
+    const titleSelect = document.getElementById('title');
+    if (titleSelect.options[titleSelect.selectedIndex].value === '') {
+      isValid = false;
+      errorMessages.push('Please select a title.');
+      titleSelect.classList.add('error');
+    } else {
+      titleSelect.classList.remove('error');
+    }
+
+    if (titleSelect.options[titleSelect.selectedIndex].value === '0') {
+      const selectedOptions = [...titleSelect.options].filter(option => option.selected);
+      if (selectedOptions.length > 1) {
+        isValid = false;
+        errorMessages.push('Please select only one item in the title field.');
+        titleSelect.classList.add('error');
+      } else {
+        titleSelect.classList.remove('error');
+      }
+    }
+
+    const currentDate = new Date().setHours(0, 0, 0, 0);
+    const selectedDate = new Date(date).setHours(0, 0, 0, 0);
+    if (selectedDate < currentDate) {
+      isValid = false;
+      errorMessages.push('Please select a future date.');
+      document.getElementById('date').classList.add('error');
+    } else {
+      document.getElementById('date').classList.remove('error');
+    }
+
+    const selectedTime = new Date(`2000-01-01 ${time}`);
+    const minTime = new Date(`2000-01-01 08:00`);
+    const maxTime = new Date(`2000-01-01 18:00`);
+    if (selectedTime < minTime || selectedTime > maxTime) {
+      isValid = false;
+      errorMessages.push('Please select a time between 8 AM and 6 PM.');
+      document.getElementById('time').classList.add('error');
+    } else {
+      document.getElementById('time').classList.remove('error');
+    }
+
+    const errorContainer = document.getElementById('error-messages');
+    errorContainer.innerHTML = '';
+    errorMessages.forEach(errorMessage => {
+      const errorElement = document.createElement('p');
+      errorElement.textContent = errorMessage;
+      errorContainer.appendChild(errorElement);
+    });
+    if (isValid) {
+    alert('Form submitted successfully!');
+  } else {
+    const errorContainer = document.getElementById('error-messages');
+    errorContainer.innerHTML = '';
+    errorMessages.forEach(errorMessage => {
+      const errorElement = document.createElement('p');
+      errorElement.textContent = errorMessage;
+      errorContainer.appendChild(errorElement);
+    });
+  }
+
+  return false;
+}
+
+
+const currentDate = new Date().toISOString().split('T')[0];
+document.getElementById('date').setAttribute('min', currentDate);
+
+const currentTime = new Date();
+const currentHour = currentTime.getHours();
+const currentMinute = currentTime.getMinutes();
+const currentTimeString = `${currentHour.toString().padStart(2, '0')}:${currentMinute.toString().padStart(2, '0')}`;
+document.getElementById('time').setAttribute('min', '08:00');
+document.getElementById('time').setAttribute('max', '18:00');
+document.getElementById('time').setAttribute('value', currentTimeString);
+
+document.getElementById('date').addEventListener('change', function() {
+  const selectedDate = new Date(this.value).setHours(0, 0, 0, 0);
+  if (selectedDate < currentDate) {
+    this.value = currentDate;
+  }
+});
+
+const timeInput = document.getElementById('time');
+timeInput.addEventListener('mousedown', function(e) {
+  const selectedTime = new Date(`2000-01-01 ${this.value}`);
+  const minTime = new Date(`2000-01-01 08:00`);
+  const maxTime = new Date(`2000-01-01 18:00`);
+
+  if (selectedTime < minTime || selectedTime > maxTime) {
+    e.preventDefault();
+    return false;
+  }
+});
+
+</script>
+
+    <!-- Bootstrap 5 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="settings.js"></script>
+    
+</body>
+
+</html>
